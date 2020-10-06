@@ -3,7 +3,7 @@ import 'package:socket_io_client/socket_io_client.dart' as IO;
 
 enum ServerStatus { Online, Offline, Connecting }
 
-final url = 'http://192.168.1.19:3000/';
+final url = 'https://flutter-backend-socket-band.herokuapp.com/';
 
 class SocketService with ChangeNotifier {
   ServerStatus _serverStatus = ServerStatus.Connecting;
